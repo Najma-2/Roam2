@@ -38,7 +38,7 @@ function Home(){
           </Route>
           <Route path="/destinations"element={
             <div>
-              <DestinationsPage/>
+             HEllo
               </div>
           }>
           </Route>

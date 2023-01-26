@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Home from "./Home";
-
+import LandingPage from "./LandingPage";
 
 
 
 function App() {
   const [page, setPage] = useState("/");
+  
 
   return (
       
     <div>
-     <Home/>
+     <LandingPage/>
     </div>
     
   );
