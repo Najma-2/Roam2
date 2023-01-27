@@ -6,13 +6,18 @@ import Signup from "./Signup";
 import NavBar from "./NavBar";
 import DestinationsPage from "./DestinationsPage";
 import Profile from "./Profile";
+import dots from './dots.png'
+
+
 function Home(){
 
 
     const [page, setPage] = useState("/");
 
     return (
-        
+
+      <div>
+      <div> <img className='logo' src={dots} alt="Dots" /></div>
       <div>
         <NavBar onChangePage={setPage} />
         <Switch>
@@ -56,7 +61,7 @@ function Home(){
         </Switch>
   
       </div>
-      
+      </div>
     );
 }
 
