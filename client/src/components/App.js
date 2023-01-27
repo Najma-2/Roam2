@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import LandingPage from "./LandingPage";
 import Logo from './Logo.png'
+import LandingPage from "./LandingPage";
+import Home from './Home'
+
 
 function App() {
   const [page, setPage] = useState("/");
@@ -10,7 +12,7 @@ function App() {
     <div>
       <div> <img className='logo' src={Logo} alt="Logo" /></div>
     <div>
-     <LandingPage/>
+     <Home/>
     </div>
     </div>
   );
