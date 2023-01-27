@@ -1,0 +1,14 @@
+:root {
+    --black: #00000;
+    --greyBackground: #e6e6e6;
+    --cornerOrange: #f9a01b;
+    --cornerPurple: #8478b6;
+    --TripPlanColor: #ed5f72;
+    --cornerGrey: #a5aaa8;
+    --cornerGreyWhite: #f4f3f3;
+    --beige: #f3ebd8;
+    }
+
+    body {
+        background: linear-gradient(to top right, #e6e6e6, #8478b6);
+      }
