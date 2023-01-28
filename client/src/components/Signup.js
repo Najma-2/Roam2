@@ -32,31 +32,34 @@ function SignUp() {
   }
 
   return (
-    <div>
+    <div className="main">
+      <p class="sign" align="center"> Sign Up</p>
     <button onClick={handleClick}>
         {showForm ? 'Hide Signup Form' : 'Signup'}
     </button>
         {showForm && (
     <form className='signup-form' onSubmit={handleSubmit}>
-      <label>
-        Username:
+
         <input
+        className="un"
+        placeholder="Desired Username"
           type="text"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
-      </label>
+
       <br />
-      <label>
-        Password:
+
         <input
+        placeholder="Desired Password"
+        className="pass"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
-      </label>
+
       <br />
-      <button type="submit">Sign Up</button>
+      <button className="submit"type="submit">Sign Up</button>
       {error && <p className='error message'>{error}</p>}
     </form>
         )}

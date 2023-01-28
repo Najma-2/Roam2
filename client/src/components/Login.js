@@ -33,31 +33,37 @@ function Login() {
   }
   
   return (
-    <div>
+    <div className="main">
+      <p class="sign" align="center"> Sign In</p>
     <button onClick={handleClick}>
         {showForm ? 'Hide Login Form' : 'Login'}
     </button>
     {showForm && (
+
+
     <form className='login-form' onSubmit={handleSubmit}>
-      <label>
-        Username:
+    
+      
         <input
+        className="un"
+        placeholder="Username"
           type="text"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
-      </label>
+      
       <br />
-      <label>
-        Password:
+      
         <input
+        className="pass"
+        placeholder="Password"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
-      </label>
+      
       <br />
-      <button type="submit">Login</button>
+      <button className="submit" type="submit">Login</button>
       {error && <p className='error message'>{error}</p>}
     </form>
     )}
