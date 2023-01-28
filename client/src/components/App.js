@@ -12,7 +12,7 @@ function App() {
     <div>
       <div> <img className='logo' src={Logo} alt="Logo" /></div>
     <div>
-     <Home/>
+     <LandingPage/>
     </div>
     </div>
   );

@@ -11,7 +11,7 @@ function NavBar({ onChangePage }) {
 
     return (
         <nav>
-            <h1>ROAM</h1>
+            
         <div className="nav-links">
             <a  href="/">Home</a>
             <a  href="/login">Login</a>
