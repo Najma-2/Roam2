@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 import DestinationsPage from "./DestinationsPage";
 import Profile from "./Profile";
 import dots from './dots.png'
+import dots2 from './dots2.png'
 import MapImg from './MapImg.png'
 
 
@@ -20,6 +21,7 @@ function Home(){
       <div>
       <div> <img className='dots' src={dots} alt="Dots" /></div>
       <div> <img className='MapImg' src={MapImg} alt="MapImg" /></div>
+      <div> <img className='dots2' src={dots2} alt="Dots2" /></div>
       <div>
         <NavBar onChangePage={setPage} />
         <Switch>
