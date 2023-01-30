@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 function DestCard({id,country,city,attractions,star_rating, dest}){
 
    
-console.log(attractions)
+
 
     const destAtt = dest.attractions.map(attraction => {
         return(

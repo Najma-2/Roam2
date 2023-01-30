@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 function DestinationsContainer({destinations}){
-
+     console.log(destinations)
    
 const destList = destinations.map((destination) => {
     return(
