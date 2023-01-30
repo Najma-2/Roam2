@@ -8,9 +8,17 @@ import LandingPage from './components/LandingPage';
 
 
 function App() {
- 
+  const [user, setUser] = useState(null)
   
-  
+  useEffect(() => {
+      fetch("/profile").then((response) => {
+        if (response.ok) {
+          response.json().then((user) => {
+            setUser(user)
+          });
+        }
+      });
+    }, [])
 
   return (
     <div className="App">
