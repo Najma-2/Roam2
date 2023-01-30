@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Card from 'react-bootstrap/Card'
 
 const AuthModal = () => {
   const [formType, setFormType] = useState('login');
@@ -32,6 +33,7 @@ const AuthModal = () => {
 
   return (
     <div>
+      <Card className='form-card'>
       <form className='form' onSubmit={handleFormSubmit}>
         <input
           type="username"
@@ -58,6 +60,7 @@ const AuthModal = () => {
         </button>
         {errorMessage && <p>{errorMessage}</p>}
       </form>
+      </Card>
     </div>
   );
 };

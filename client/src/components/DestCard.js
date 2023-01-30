@@ -1,16 +1,33 @@
 import React from 'react'
-
-
-function DestCard(){
-
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 
 
 
+function DestCard({id,country,city,attractions,star_rating, dest}){
+
+   
+console.log(attractions)
+
+    const destAtt = dest.attractions.map(attraction => {
+        return(
+            attraction.location
+        )
+    })
 
     return(
-
-        <div></div>
+    <Col style={{
+            marginTop: '10px',
+        }}>
+            <Card key={id} >
+                <Card.Title className='text-center'>{country}{city}</Card.Title>
+                {/* <Card.Img src={image} />  We'll add an image*/}
+                <Card.Text className='text-center text-truncate'>{destAtt}</Card.Text>
+                <Card.Text className='text-center'>{star_rating} ⭐️</Card.Text>
+            
+            </Card>
+        </Col>
     )
 }
 

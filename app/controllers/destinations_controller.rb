@@ -15,7 +15,7 @@ class DestinationsController < ApplicationController
     end
 
     def create 
-        destination = Destination.create(country: params[:country], city: params[:city], star_rating: params[:star_rating])
+        destination = Destination.create(add_destination)
         render json: destination, status: :created
     end
 
@@ -24,4 +24,10 @@ class DestinationsController < ApplicationController
         destination.destroy
         head :no_content
     end
+end
+
+private
+
+def add_destination
+    params.permit(:country, :city, :star_rating, :attractions)
 end

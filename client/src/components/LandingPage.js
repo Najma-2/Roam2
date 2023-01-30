@@ -14,7 +14,7 @@ function LandingPage({handleSubmit}){
 return (
 
     <div>
-        <AuthModal/>
+      
     </div>
 )
 }
