@@ -18,4 +18,10 @@ class DestinationsController < ApplicationController
         destination = Destination.create(country: params[:country], city: params[:city], star_rating: params[:star_rating])
         render json: destination, status: :created
     end
+
+    def destroy
+        destination = Destination.find_by(id: params[:id])
+        destination.destroy
+        head :no_content
+    end
 end

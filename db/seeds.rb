@@ -3,9 +3,9 @@
 #
 puts "Seeding the database"
 
-t1 = User.create(name: "Victora", password:"1234")
-t2 = User.create(name: "Ana", password:"1234")
-t3 = User.create(name: "Najma", password:"1234")
+t1 = User.create(name: "Victora", username: "Toria",password:"1234")
+t2 = User.create(name: "Ana", username: "Avros", password:"1234")
+t3 = User.create(name: "Najma", username: "Najma", password:"1234")
 
 
 d1 = Destination.create(country: "Switzerland", city: "Lucerne" , star_rating: 5 )

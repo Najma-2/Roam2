@@ -19,7 +19,9 @@ function DestinationsPage() {
     }
     fetchData();
   }, []);
+
   console.log(destinations)
+  
 
   if (error) {
     return <p>{error}</p>;
@@ -32,7 +34,7 @@ function DestinationsPage() {
         {destinations.map((destination) => (
           <li key={destination.id}>
             {destination.country}, {destination.city}
-            console.log(destination)
+            
           </li>
         ))}
       </ul>

@@ -13,7 +13,9 @@ root {
         background: no-repeat linear-gradient(to top right, #ffb867b7, rgb(243, 211, 164), #e6e6e6,#e6e6e6, #e6e6e6, #e6e6e6,#e6e6e6, #8478b677, #8478b6);
         background-attachment: fixed;
         overflow: hidden;
-      }
+        /* background-image: url("/Users/najma/Development/code/phase-4/Project 4/Roam2/client/src/components/MapImg.png"); */
+}
+      
       
       .logo {
         display: block;
@@ -114,6 +116,17 @@ root {
 
     }
 
+
+.form{
+    float: right;
+}
    
+.nav{
+    display: flex;
+}
+
+.landing-page{
+    background-image: url("/Users/najma/Development/code/phase-4/Project 4/Roam2/client/src/components/MapImg.png");
+}
 
     

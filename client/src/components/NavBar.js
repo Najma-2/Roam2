@@ -13,10 +13,12 @@ function NavBar({ onChangePage }) {
         <nav>
             
         <div className="nav-links">
-            <a  href="/">Home</a>
-            <a  href="/login">Login</a>
-            <a  href="/signup">Sign up</a>
-            <a  href="/destinations">Destinations</a>
+            <ul>
+            <li><a  href="/">Home</a></li>
+            <li><a  href="/login">Login</a></li>
+            <li><a  href="/signup">Sign up</a></li>
+            <li><a  href="/destinations">Destinations</a></li>
+            </ul>
         </div>
         </nav>
 
