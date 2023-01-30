@@ -5,7 +5,7 @@ class CreateAttractions < ActiveRecord::Migration[7.0]
       t.integer :rating
       t.integer :destination_id
       t.integer :user_id
-
+      t.string :img
       t.timestamps
     end
   end
