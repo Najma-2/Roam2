@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_26_202955) do
     t.integer "rating"
     t.integer "destination_id"
     t.integer "user_id"
+    t.string "img"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,6 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_26_202955) do
   create_table "destinations", force: :cascade do |t|
     t.string "country"
     t.string "city"
+    t.string "img"
     t.integer "star_rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,6 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_26_202955) do
     t.string "name"
     t.string "username"
     t.string "password_digest"
+    t.string "img"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
