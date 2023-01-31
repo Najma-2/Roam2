@@ -29,5 +29,5 @@ end
 private
 
 def add_destination
-    params.permit(:country, :city, :star_rating, :attractions)
+    params.permit(:country, :city, :star_rating, :attractions,:img)
 end

@@ -1,3 +1,4 @@
+
 .propCard{ height:10em;
   width:14em;
   display:-webkit-box;
@@ -19,8 +20,7 @@
 
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
+} 
 #title {
     
   margin:10px;
@@ -30,4 +30,16 @@
 
 .pageTitle {
     font-size: 50px;
+} 
+.main-card{
+  background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.text-center text-truncate{
+  padding: 10px;
 }

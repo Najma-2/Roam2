@@ -8,7 +8,7 @@ t2 = User.create(name: "Ana", username: "Ana", password:"1234", img:Faker::Avata
 t3 = User.create(name: "Najma", username: "Najma", password:"1234", img:Faker::Avatar.image)
 
 
-d1 = Destination.create(country: "Switzerland", city: "Lucerne" , star_rating: 5 )
+d1 = Destination.create(country: "Switzerland", city: "Lucerne" , star_rating: 5, img:"https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/59/b8.jpg" )
 d2 = Destination.create(country:'France', city:'Paris', star_rating: 4 )
 d3 = Destination.create(country:"Spain", city: "Madrid", star_rating: 3 )
 d4 = Destination.create(country: "Italy", city:"Florence", star_rating: 5)

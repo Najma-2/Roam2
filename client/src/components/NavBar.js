@@ -31,7 +31,7 @@ function NavBar({ user, setUser }) {
                     {user ? 
                     <NavDropdown.Item href="/" onClick={handleLogout}>Logout</NavDropdown.Item> : 
                     <NavDropdown.Item href="/">Login</NavDropdown.Item>}
-                    <NavDropdown.Item href="/destinations">Add Your Destination Here</NavDropdown.Item>
+                    <NavDropdown.Item href="/create">Add Your Destination Here</NavDropdown.Item>
                 </NavDropdown>
             </Nav>
         </Container>

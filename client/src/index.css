@@ -12,13 +12,14 @@ root {
 body {
     background: no-repeat linear-gradient(to top right, #ffb867b7, rgb(243, 211, 164), #e6e6e6,#e6e6e6, #e6e6e6, #e6e6e6,#e6e6e6, #8478b677, #8478b6);
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-x: hidden;
     position: static;
     /* background-image: url("/Users/najma/Development/code/phase-4/Project 4/Roam2/client/src/components/MapImg.png"); */
 }
 
 
 .logo {
+  position: static;
     display: block;
     float: left;
     width: 650px;
@@ -83,15 +84,7 @@ body {
     padding-top: 190px;
     padding-left: 150px;   
 }
-/*     
-.block{
-    
-    position: absolute;
-    text-align:center;
-    padding-left: 38em;
-    padding:55%;
-    
-} */
+
 .sit {
     
     color:#5e4430;
@@ -123,24 +116,17 @@ body {
     background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0 10px 20px 0 rgba(#999, .25);
-    /* padding: 1.75rem; */
     border-radius: 8px;
-    /* overflow: hidden; */
-    /* padding-bottom: 85%; */
     background-image: url(https://images.unsplash.com/photo-1605731939993-01c44a0fccba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNhciUyMHN1bnNldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: 0 15%;
-    /* position: relative;
-    position: absolute; */
     left: 10%;
     top: 15%;
     right: 10%;
     font-size: 1.75rem;
     font-weight: 700;
     color: #735400;
-    line-height: 1.222;
-    /* display: block; */
     font-size: .90em;
     font-weight: 400;
     margin-top: .25em;
@@ -381,14 +367,17 @@ body {
   }
 
 
-  .Destinations{
-    position: absolute;
-    width: 60%;
+  .pageTitle{
+    position: relative;
+    width: 90%;
     height: 60%;
-    margin: 18em;
-    margin-top: 60px;
+    text-align: center;
+    padding-left: 5em;
+   
    
   }
+
+
 
     
 

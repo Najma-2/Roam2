@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#logout"
 
   get "/destinations", to: "destinations#index"
-  post "/destinations", to: "destinations#create"
+  post "/create", to: "destinations#create"
   get "/destinations/:id", to: "destinations#show"
 
   post "/attractions", to: "attractions#create"

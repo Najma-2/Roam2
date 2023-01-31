@@ -1,6 +1,8 @@
 import {React, useState} from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import "./AddDest.css"
+
 
 function AddDest({destinations,handleNewDestination, newDest, user, country, city, attractions, star_rating}){
     const [newDestination, setNewDestination] = useState()
@@ -17,10 +19,10 @@ function AddDest({destinations,handleNewDestination, newDest, user, country, cit
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                country: country,
-                city: city,
-                attractions: attractions,
-                star_rating: star_rating,
+                country,
+                city,
+                attractions,
+                star_rating,
 
 
             }),
@@ -39,43 +41,41 @@ function AddDest({destinations,handleNewDestination, newDest, user, country, cit
 
  return(
 
-    <div>
-        {newDestination ?
+    <div className="main">
+        
         <Form>
             <Form.Group>
-            <Form.Label>Add Destination</Form.Label>
+            <Form.Label className="sign" align="center">Add Destination</Form.Label>
             <Form.Control 
             type="text"
             placeholder="Country"
+            className="un"
             value={country}
             />
-            <br/>
-            <Form.Control 
+            
+            <Form.Control className="un"
             type="text"
             placeholder="City"
             value={city}
             />
-            <br/>
+            
             <Form.Control 
             type="text"
             placeholder="Attractions"
+            className="un"
             value={attractions}
             />
-            <br/>
+            
             <Form.Control 
             type="text"
             placeholder="Star Rating"
+            className="un"
             value={star_rating} 
             />
             </Form.Group>
-            <Button href="/" onClick={newDestSubmit}>Submit</Button> 
+            <Button className="destform-submit" href="/destinations" align="center" onClick={newDestSubmit}>Submit</Button> 
         </Form>
-        : null}
-        { user ?  <Button
-                    style={{ marginTop: '10px' }}
-                    onClick={handleDestinationToggle}
-                >Add a Destination!
-                </Button>: null  }
+        
     </div>
  )
 }
