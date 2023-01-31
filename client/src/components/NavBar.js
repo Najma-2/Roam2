@@ -18,7 +18,7 @@ function NavBar({ user, setUser }) {
 
 
     return (
-        <Navbar variant='light' bg='dark' >
+        <Navbar>
         <Container>
             
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -24,6 +24,7 @@ const destList = destinations.map((destination) => {
 
     return(
         <div >
+          <h6 className="pageTitle"> Explore Travel Guides and Itineraries</h6>
             <Container style={{
             }}>
               <Row xs={4}>

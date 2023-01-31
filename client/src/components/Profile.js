@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./Profile.css"
 
 function Profile({user}){
 
@@ -27,7 +27,20 @@ function Profile({user}){
     return(
 
         <div>
-            
+            <div className="userinfo"> 
+            <img src="https://as1.ftcdn.net/v2/jpg/01/65/63/94/1000_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg" alt="UserPic"/>
+            <h6>Username</h6>
+            </div>
+
+
+
+
+
+
+
+
+
+
         </div>
     )
 }
