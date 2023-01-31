@@ -54,7 +54,7 @@ function handleNewDestination(newDest){
       <Routes>
         <Route exact path='/' element={<div className="landing-page"><AuthModal /></div>} />
         <Route exact path="/destinations" element={<DestinationsContainer destinations={destinations}/>} />
-        <Route exact path="/create" element={<AddDest handleNewDestination={handleNewDestination} user={user} destinations={destinations} newDest={newDest}/>} />
+        <Route exact path="/destinations" element={<AddDest handleNewDestination={handleNewDestination} user={user} destinations={destinations} newDest={newDest}/>} />
         <Route exact path="/profile" element={<Profile user={user} />} />
       </Routes>
     </div>
