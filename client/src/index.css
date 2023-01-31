@@ -123,12 +123,6 @@ root {
     */
 .nav{
     display: flex;
-}
-
-.landing-page{
-    background-image: url("/Users/najma/Development/code/phase-4/Project 4/Roam2/client/src/assests/MapImg.png");
-}
-.nav {
     float: right;
     justify-content: space-around;
   }

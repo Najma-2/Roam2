@@ -7,14 +7,14 @@ function LandingPage({handleSubmit}){
 
 
 
-
+// do not code in here, not in use
 
 
 
 return (
 
     <div>
-      
+
     </div>
 )
 }
