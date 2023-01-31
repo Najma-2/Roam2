@@ -68,7 +68,7 @@ function AddDest({destinations,handleNewDestination, newDest, user, country, cit
             value={star_rating} 
             />
             </Form.Group>
-            <Button onClick={newDestSubmit}>Submit</Button> 
+            <Button href="/" onClick={newDestSubmit}>Submit</Button> 
         </Form>
         : null}
         { user ?  <Button
