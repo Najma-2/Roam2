@@ -47,7 +47,7 @@ function handleNewDestination(newDest){
   return (
     <div className="App">
       <div>
-       <h6>hi</h6>
+
       <div className='nav'><NavBar user={user} setUser={setUser} /></div>
       </div>
       <Routes>

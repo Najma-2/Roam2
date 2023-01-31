@@ -61,7 +61,26 @@ const AuthModal = () => {
         {errorMessage && <p>{errorMessage}</p>}
       </form>
       </Card>
-      <p>hi</p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </div>
   );
 };
